@@ -1,5 +1,5 @@
-var arg1 = +prompt('Введите a'),
-  arg2 = +prompt('Введите b'),
+var a = +prompt('Введите a'),
+  b = +prompt('Введите b'),
   operation = prompt('Выберете необходимое действие');
 
 function sum(a, b) {
@@ -18,23 +18,23 @@ function del(a, b) {
   return a / b;
 }
 
-function mathOperation(arg1, arg2, operation) {
+function mathOperation(a, b, operation) {
   switch (operation) {
     case 'sum':
       {
-        return sum(arg1, arg2);
+        return alert(sum(a, b));
       }
     case 'vic':
       {
-        return vic(arg1, arg2);
+        return alert(vic(a, b));a
       }
     case 'umn':
       {
-        return umn(arg1, arg2);
+        return alert(umn(a, b));
       }
     case 'del':
       {
-        return del(arg1, arg2);
+        return alert(del(a, b));
       }
     default:
       {
@@ -42,3 +42,4 @@ function mathOperation(arg1, arg2, operation) {
       }
   }
 }
+mathOperation(a, b, operation)
