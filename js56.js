@@ -15,7 +15,9 @@ function umn(a, b) {
 }
 
 function del(a, b) {
+  if (y!=0)
   return a / b;
+  ale
 }
 
 function mathOperation(a, b, operation) {
